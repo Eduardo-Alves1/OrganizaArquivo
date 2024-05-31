@@ -28,13 +28,19 @@ sg.theme("Tan")
 
 tela_Layout = [
     [sg.Text("Selecione a pasta que está bagunçada.", text_color="black")],
-    [sg.Input(key="pasta_bagunçada"), sg.FolderBrowse("Selecionar")],
+    [
+        sg.Input(key="pasta_bagunçada"),
+        sg.FolderBrowse("Selecionar", button_color="blue"),
+    ],
     [
         sg.Text(
             "Selecione a pasta onde será organizada seus arquivos.", text_color="black"
         )
     ],
-    [sg.Input(key="pasta_organizada"), sg.FolderBrowse("Selecionar")],
+    [
+        sg.Input(key="pasta_organizada"),
+        sg.FolderBrowse("Selecionar", button_color="blue"),
+    ],
     [
         sg.Button("Iniciar", key="Iniciar", button_color="green"),
         sg.Button("Cancelar", key="Cancelar", button_color="red"),
